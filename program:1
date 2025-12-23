@@ -1,0 +1,6 @@
+import pandas as pd
+df = pd.read_csv("departments.csv")
+distinct_dept_ids = df["DEPARTMENT_ID"].drop_duplicates()
+
+print("Distinct Department IDs:")
+print(distinct_dept_ids)
